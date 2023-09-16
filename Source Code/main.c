@@ -6,12 +6,17 @@ int main()
     Logo();
 
     // Get number of students
+    strcntr("", 100);
+    printf("\n");
     strcntr("Enter students number:", 100);
+    printf("\n");
+    strcntr("", 100);
     printf("\n");
     scanf("%d", &size);
     do
     {
-        Logo();
+        strcntr("", 100);
+        printf("\n");
         MainChoice();
 
         // Run functions depending on choice
