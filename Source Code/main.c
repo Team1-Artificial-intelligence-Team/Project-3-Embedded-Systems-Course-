@@ -2,20 +2,19 @@
 
 int main()
 {
+    // Print logo
     Logo();
-    strcntr("", 100);
-    printf("\n");
+
+    // Get number of students
     strcntr("Enter students number:", 100);
-    printf("\n");
-    strcntr("", 100);
     printf("\n");
     scanf("%d", &size);
     do
     {
-
         Logo();
         MainChoice();
 
+        // Run functions depending on choice
         if (choice == 1)
         {
             FirstChoice();
