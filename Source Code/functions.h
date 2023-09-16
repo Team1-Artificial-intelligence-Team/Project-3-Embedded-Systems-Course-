@@ -2,8 +2,10 @@
 #include <string.h>
 #include <conio.h>
 
+// Prototyping
 void MainChoice(), FirstChoice(), SecondChoice(), ThirdChoice(),Logo(), strcntr();
 
+// Define students structure
 typedef struct students
 {
     char name[30];
@@ -27,6 +29,7 @@ void Logo()
     printf(" \n\n@Made by TEAM1 (Fares Mostafa - Hassan Mohamed - Youssef Tamer - Youssef Walid)\n");
 }
 
+// String center function
 void strcntr(char string[100], int width)
 {
     // Get the length of the string.
@@ -70,6 +73,7 @@ void strcntr(char string[100], int width)
 }
 int size;
 
+// Main menu
 void MainChoice()
 {
     strcntr("", 100);
@@ -87,6 +91,7 @@ void MainChoice()
     fflush(stdin);
 }
 
+// Scan
 void FirstChoice()
 {
     for (int i = 0; i < size; i++)
@@ -113,6 +118,7 @@ void FirstChoice()
     scan = 1;
 }
 
+// Print
 void SecondChoice()
 {
     for (int i = 0; i < size; i++)
@@ -134,6 +140,7 @@ void SecondChoice()
     }
 }
 
+// Sorting
 void ThirdChoice()
 {
     strcntr("1- Ascending , 2- Descending", 100);
