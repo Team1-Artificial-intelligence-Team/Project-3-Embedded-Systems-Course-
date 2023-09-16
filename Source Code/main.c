@@ -6,6 +6,7 @@ int main()
     Logo();
 
     // Get number of students
+    printf("\n");
     strcntr("", 100);
     printf("\n");
     strcntr("Enter students number:", 100);
@@ -15,7 +16,9 @@ int main()
     scanf("%d", &size);
     do
     {
+        printf("\n");
         strcntr("", 100);
+        printf("\n");
         printf("\n");
         MainChoice();
 
